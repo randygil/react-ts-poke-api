@@ -26,7 +26,7 @@ const Component = () => {
 
           {pokemonData.stats.map((stat) => {
             return (
-              <p>
+              <p key={stat.name}>
                 {stat.name}: {stat.stat}
               </p>
             );
